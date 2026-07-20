@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260719-23-d1c6bdc"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style &amp; Space Collection</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/115ac030b66cb09d.editing_sdk.js" integrity="sha512-iprSVFeQYn3ohqCRHg8icBdabh/A6CUj/2P1u5xqVokDLyuISmuH1lR/W3Xi4krquqPpFtWk6+whjf7zAIy5Zw=="></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #25251f;
+      --paper: #f4f0e8;
+      --coral: #e45f43;
+      --sage: #9baa8e;
+      --line: rgba(37, 37, 31, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      width: 100%;
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.24;
+      background-image: radial-gradient(rgba(37,37,31,.16) .55px, transparent .55px);
+      background-size: 6px 6px;
+      z-index: 0;
+    }
+
+    .app-shell { position: relative; z-index: 1; width: 100%; }
+    .display-font { font-family: "Fraunces", serif; }
+
+    .focus-ring:focus-visible {
+      outline: 3px solid var(--coral);
+      outline-offset: 4px;
+    }
+
+    .hero-image-wrap::before {
+      content: "";
+      position: absolute;
+      width: 38%;
+      height: 35%;
+      left: -7%;
+      bottom: -7%;
+      background: var(--sage);
+      z-index: -1;
+    }
+
+    .hero-image-wrap::after {
+      content: "";
+      position: absolute;
+      right: -26px;
+      top: 14%;
+      width: 52px;
+      height: 52px;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      opacity: .65;
+    }
+
+    .filter-button {
+      border-bottom: 2px solid transparent;
+      transition: color .22s ease, border-color .22s ease;
+    }
+
+    .filter-button[aria-selected="true"] {
+      color: var(--coral);
+      border-color: var(--coral);
+    }
+
+    .editorial-card {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: cardReveal .58s cubic-bezier(.22,.8,.28,1) forwards;
+    }
+
+    .editorial-card.is-hidden { display: none; }
+
+    .card-image {
+      transition: transform .7s cubic-bezier(.2,.75,.2,1), filter .35s ease;
+    }
+
+    .editorial-card:hover .card-image,
+    .editorial-card:focus-within .card-image {
+      transform: scale(1.045);
+      filter: saturate(1.06);
+    }
+
+    .card-action svg { transition: transform .25s ease; }
+    .editorial-card:hover .card-action svg { transform: translateX(4px); }
+
+    @keyframes cardReveal {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heroReveal {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-reveal {
+      opacity: 0;
+      animation: heroReveal .8s cubic-bezier(.22,.8,.28,1) forwards;
+    }
+
+    .modal-panel {
+      transform: translateY(20px) scale(.98);
+      opacity: 0;
+      transition: transform .28s ease, opacity .28s ease;
+    }
+
+    .modal-shell.is-open .modal-panel {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hero-reveal, .editorial-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+      .card-image, .modal-panel { transition: none; }
+    }
+  </style>
+  <script src="/_sdk/e3937a0574eb2d69.data_sdk.js" type="text/javascript" integrity="sha512-xbp/ACqEQy1aDxYMtXTrR3y5MUbzxuggRR/9sD48Gl4VhLMMCiAHsxMaFV6DTdeBpR6ymF+t2zhPKYkWM3+Jfw=="></script>
+  <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: linear-gradient(135deg, rgb(247, 243, 235), rgb(238, 232, 220));">
+  <div class="app-shell w-full">
+   <header data-template-id="site-header" class="canva-header border-b border-black/15" style="background: rgba(244, 240, 232, 0.92);">
+    <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 md:px-10"><a href="#top" class="focus-ring flex items-center gap-3 rounded-sm" aria-label="Style and Space home"> <span data-template-id="brand-monogram" class="canva-tag display-font flex h-10 w-10 items-center justify-center rounded-full" style="background: rgb(37, 37, 31); color: rgb(247, 243, 235); font-weight: 600; font-style: normal; font-size: 14px;">S/S</span> <span data-template-id="brand-name" class="canva-text font-semibold tracking-[0.16em] uppercase" style="color: rgb(37, 37, 31); font-weight: 700; font-style: normal; font-size: 14px;">Style &amp; Space</span> </a> <a data-template-id="header-link" href="#collection" class="canva-link focus-ring hidden items-center gap-2 rounded-sm font-semibold md:flex" style="color: rgb(37, 37, 31); font-weight: 600; font-style: normal; font-size: 16px;">Browse the collection</a>
+    </div>
+   </header>
+   <main id="top">
+    <section class="mx-auto grid w-full max-w-7xl gap-12 px-5 py-14 md:px-10 md:py-20 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:gap-20">
+     <div class="hero-reveal" style="animation-delay:.08s">
+      <div class="mb-7 flex items-center gap-3"><span class="h-px w-12 bg-black/50"></span>
+       <p data-template-id="hero-kicker" class="canva-text font-semibold uppercase tracking-[0.22em]" style="color: rgb(111, 106, 96); font-weight: 700; font-style: normal; font-size: 12px;">The curated living edit · 2026</p>
+      </div>
+      <h1 data-template-id="hero-title" class="canva-text display-font max-w-xl leading-[0.96] tracking-[-0.045em]" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 68px; letter-spacing: -0.05rem; line-height: 0.98;">Dress yourself. Style your space.</h1>
+      <p data-template-id="hero-description" class="canva-text mt-7 max-w-lg leading-relaxed" style="color: rgb(95, 90, 81); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.65;">A considered collection of silhouettes, textures, and rooms—made for people who see personal style as a whole way of living.</p><button id="explore-button" data-template-id="hero-button" type="button" class="canva-button focus-ring mt-9 inline-flex items-center gap-3 rounded-full px-6 py-3.5 font-semibold shadow-[4px_4px_0_#25251f] transition-transform hover:-translate-y-0.5 active:translate-y-0" style="background: rgb(228, 95, 67); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Explore the edit</button>
+     </div>
+     <div class="hero-reveal relative" style="animation-delay:.25s">
+      <div class="hero-image-wrap relative z-10 ml-auto w-[94%]">
+       <div class="aspect-[4/3] overflow-hidden rounded-[2px] border border-black/20 p-2"><img data-template-id="hero-image" loading="lazy" class="canva-image h-full w-full object-cover" src="https://images.pexels.com/photos/31390597/pexels-photo-31390597.jpeg" alt="Warm still life setup with coffee, candles, and fashion elements.">
+       </div>
+       <div data-template-id="hero-stamp" class="canva-tag absolute -left-5 top-8 -rotate-6 rounded-full px-4 py-2 font-semibold uppercase tracking-[0.16em] shadow-md" style="background: rgb(217, 223, 207); color: rgb(37, 37, 31); font-weight: 700; font-style: normal; font-size: 11px;">Issue No. 01</div>
+      </div>
+     </div>
+    </section>
+    <section id="collection" class="mx-auto w-full max-w-7xl px-5 pb-16 pt-8 md:px-10 md:pb-24">
+     <div class="mb-9 flex flex-col justify-between gap-7 border-y border-black/15 py-6 md:flex-row md:items-end">
+      <div>
+       <p data-template-id="collection-kicker" class="canva-text mb-2 font-semibold uppercase tracking-[0.2em]" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 12px;">Six ideas, one point of view</p>
+       <h2 data-template-id="collection-title" class="canva-text display-font tracking-[-0.035em]" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 24px;">The collection</h2>
+      </div>
+      <div role="tablist" aria-label="Filter collection" class="flex flex-wrap gap-6"><button data-template-id="filter-all" type="button" role="tab" aria-selected="true" data-filter="all" class="canva-tabs filter-button focus-ring rounded-sm pb-1 font-semibold" style="color: rgb(37, 37, 31); font-weight: 700; font-style: normal; font-size: 16px;">All</button> <button data-template-id="filter-fashion" type="button" role="tab" aria-selected="false" data-filter="fashion" class="canva-tabs filter-button focus-ring rounded-sm pb-1 font-semibold" style="color: rgb(37, 37, 31); font-weight: 700; font-style: normal; font-size: 16px;">Fashion</button> <button data-template-id="filter-decor" type="button" role="tab" aria-selected="false" data-filter="decor" class="canva-tabs filter-button focus-ring rounded-sm pb-1 font-semibold" style="color: rgb(37, 37, 31); font-weight: 700; font-style: normal; font-size: 16px;">Interiors</button>
+      </div>
+     </div>
+     <div id="gallery" class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <article data-category="fashion" tabindex="0" role="button" aria-haspopup="dialog" class="editorial-card focus-ring rounded-sm" style="animation-delay:.05s">
+       <div class="aspect-[4/5] overflow-hidden bg-stone-200"><img data-template-id="fashion-1-image" loading="lazy" class="canva-image card-image h-full w-full object-cover" src="https://images.pexels.com/photos/17293344/pexels-photo-17293344.jpeg" alt="A stylish white dress elegantly hangs in a modern indoor clothing store setting.">
+       </div>
+       <div class="border-b border-black/20 pb-5 pt-5">
+        <p data-template-id="fashion-1-category" class="canva-tag mb-2 inline-block rounded-full px-3 py-1 font-semibold uppercase tracking-[0.16em]" style="background: rgb(37, 37, 31); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px;">Fashion · Form</p>
+        <h3 data-template-id="fashion-1-title" class="canva-text display-font leading-tight" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 29px;">The quiet statement</h3>
+        <p data-template-id="fashion-1-description" class="canva-text mt-3 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Clean lines and luminous neutrals make a simple silhouette feel architectural.</p><button data-template-id="fashion-1-action" type="button" class="canva-button card-action focus-ring mt-4 flex items-center gap-2 rounded-sm font-semibold" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 16px;">View story</button>
+       </div>
+      </article>
+      <article data-category="fashion" tabindex="0" role="button" aria-haspopup="dialog" class="editorial-card focus-ring rounded-sm" style="animation-delay:.12s">
+       <div class="aspect-[4/5] overflow-hidden bg-stone-200"><img data-template-id="fashion-2-image" loading="lazy" class="canva-image card-image h-full w-full object-cover" src="https://images.pexels.com/photos/33633245/pexels-photo-33633245.jpeg" alt="Men's clothing ensemble including trousers, sweater, boots, and belt arranged on a blue surface.">
+       </div>
+       <div class="border-b border-black/20 pb-5 pt-5">
+        <p data-template-id="fashion-2-category" class="canva-tag mb-2 inline-block rounded-full px-3 py-1 font-semibold uppercase tracking-[0.16em]" style="background: rgb(37, 37, 31); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px;">Fashion · Layers</p>
+        <h3 data-template-id="fashion-2-title" class="canva-text display-font leading-tight" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 29px;">Soft utility</h3>
+        <p data-template-id="fashion-2-description" class="canva-text mt-3 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Grounded pieces meet tactile knits for an effortless, practical uniform.</p><button data-template-id="fashion-2-action" type="button" class="canva-button card-action focus-ring mt-4 flex items-center gap-2 rounded-sm font-semibold" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 16px;">View story</button>
+       </div>
+      </article>
+      <article data-category="fashion" tabindex="0" role="button" aria-haspopup="dialog" class="editorial-card focus-ring rounded-sm" style="animation-delay:.19s">
+       <div class="aspect-[4/5] overflow-hidden bg-stone-200"><img data-template-id="fashion-3-image" loading="lazy" class="canva-image card-image h-full w-full object-cover" src="https://images.pexels.com/photos/7953286/pexels-photo-7953286.jpeg" alt="Stylish leather handbags displayed on a geometric studio background.">
+       </div>
+       <div class="border-b border-black/20 pb-5 pt-5">
+        <p data-template-id="fashion-3-category" class="canva-tag mb-2 inline-block rounded-full px-3 py-1 font-semibold uppercase tracking-[0.16em]" style="background: rgb(37, 37, 31); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px;">Fashion · Objects</p>
+        <h3 data-template-id="fashion-3-title" class="canva-text display-font leading-tight" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 29px;">Carry the color</h3>
+        <p data-template-id="fashion-3-description" class="canva-text mt-3 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Sculptural leather and joyful tones turn the everyday bag into a focal point.</p><button data-template-id="fashion-3-action" type="button" class="canva-button card-action focus-ring mt-4 flex items-center gap-2 rounded-sm font-semibold" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 16px;">View story</button>
+       </div>
+      </article>
+      <article data-category="decor" tabindex="0" role="button" aria-haspopup="dialog" class="editorial-card focus-ring rounded-sm" style="animation-delay:.26s">
+       <div class="aspect-[4/5] overflow-hidden bg-stone-200"><img data-template-id="decor-1-image" loading="lazy" class="canva-image card-image h-full w-full object-cover" src="https://images.pexels.com/photos/8251251/pexels-photo-8251251.jpeg" alt="A serene Japandi-style room features wooden furniture and minimalist art, creating a calm, uncluttered space.">
+       </div>
+       <div class="border-b border-black/20 pb-5 pt-5">
+        <p data-template-id="decor-1-category" class="canva-tag mb-2 inline-block rounded-full px-3 py-1 font-semibold uppercase tracking-[0.16em]" style="background: rgb(147, 161, 133); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px;">Interiors · Living</p>
+        <h3 data-template-id="decor-1-title" class="canva-text display-font leading-tight" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 29px;">Room to breathe</h3>
+        <p data-template-id="decor-1-description" class="canva-text mt-3 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Warm timber, low profiles, and open space create a calm that still feels lived in.</p><button data-template-id="decor-1-action" type="button" class="canva-button card-action focus-ring mt-4 flex items-center gap-2 rounded-sm font-semibold" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 16px;">View story</button>
+       </div>
+      </article>
+      <article data-category="decor" tabindex="0" role="button" aria-haspopup="dialog" class="editorial-card focus-ring rounded-sm" style="animation-delay:.33s">
+       <div class="aspect-[4/5] overflow-hidden bg-stone-200"><img data-template-id="decor-2-image" loading="lazy" class="canva-image card-image h-full w-full object-cover" src="https://images.pexels.com/photos/35082703/pexels-photo-35082703.jpeg" alt="Monochrome still life of ceramic vases on rustic shelves with soft shadows against a textured wall.">
+       </div>
+       <div class="border-b border-black/20 pb-5 pt-5">
+        <p data-template-id="decor-2-category" class="canva-tag mb-2 inline-block rounded-full px-3 py-1 font-semibold uppercase tracking-[0.16em]" style="background: rgb(147, 161, 133); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px;">Interiors · Detail</p>
+        <h3 data-template-id="decor-2-title" class="canva-text display-font leading-tight" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 29px;">The art of the shelf</h3>
+        <p data-template-id="decor-2-description" class="canva-text mt-3 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">A tonal arrangement lets shape, shadow, and handmade surfaces do the talking.</p><button data-template-id="decor-2-action" type="button" class="canva-button card-action focus-ring mt-4 flex items-center gap-2 rounded-sm font-semibold" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 16px;">View story</button>
+       </div>
+      </article>
+      <article data-category="decor" tabindex="0" role="button" aria-haspopup="dialog" class="editorial-card focus-ring rounded-sm" style="animation-delay:.4s">
+       <div class="aspect-[4/5] overflow-hidden bg-stone-200"><img data-template-id="decor-3-image" loading="lazy" class="canva-image card-image h-full w-full object-cover" src="https://images.pexels.com/photos/5390122/pexels-photo-5390122.jpeg" alt="A warm, beautifully lit nightstand featuring a woven lamp and potted plant, creating a cozy atmosphere.">
+       </div>
+       <div class="border-b border-black/20 pb-5 pt-5">
+        <p data-template-id="decor-3-category" class="canva-tag mb-2 inline-block rounded-full px-3 py-1 font-semibold uppercase tracking-[0.16em]" style="background: rgb(147, 161, 133); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px;">Interiors · Glow</p>
+        <h3 data-template-id="decor-3-title" class="canva-text display-font leading-tight" style="color: rgb(37, 37, 31); font-weight: 500; font-style: normal; font-size: 29px;">After-dark warmth</h3>
+        <p data-template-id="decor-3-description" class="canva-text mt-3 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.55;">Woven light, leafy greens, and close-at-hand objects soften the end of the day.</p><button data-template-id="decor-3-action" type="button" class="canva-button card-action focus-ring mt-4 flex items-center gap-2 rounded-sm font-semibold" style="color: rgb(228, 95, 67); font-weight: 700; font-style: normal; font-size: 16px;">View story</button>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="mx-auto w-full max-w-7xl px-5 pb-16 md:px-10 md:pb-24">
+     <div data-template-id="closing-banner" class="canva-banner relative overflow-hidden px-6 py-12 md:px-12 md:py-16" style="background: linear-gradient(135deg, rgb(37, 37, 31), rgb(58, 58, 48));">
+      <div class="relative z-10 max-w-2xl">
+       <p data-template-id="closing-kicker" class="canva-text mb-3 font-semibold uppercase tracking-[0.2em]" style="color: rgb(233, 155, 134); font-weight: 700; font-style: normal; font-size: 12px;">A simple styling rule</p>
+       <h2 data-template-id="closing-title" class="canva-text display-font leading-tight tracking-[-0.035em]" style="color: rgb(247, 243, 235); font-weight: 500; font-style: normal; font-size: 24px;">Repeat a texture, not a trend.</h2>
+       <p data-template-id="closing-description" class="canva-text mt-4 max-w-xl leading-relaxed" style="color: rgb(216, 212, 202); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.6;">The linen you wear, the timber beside your bed, the curve of a bag and a vase—small echoes make personal style feel connected.</p>
+      </div>
+      <div class="absolute -bottom-16 -right-10 h-56 w-56 rounded-full border-[34px] border-white/15"></div>
+     </div>
+    </section>
+   </main>
+   <footer data-template-id="site-footer" class="canva-footer border-t border-black/15" style="background: rgb(235, 228, 215);">
+    <div class="mx-auto flex w-full max-w-7xl flex-col gap-3 px-5 py-7 md:flex-row md:items-center md:justify-between md:px-10">
+     <p data-template-id="footer-title" class="canva-text font-semibold" style="color: rgb(37, 37, 31); font-weight: 700; font-style: normal; font-size: 16px;">Style &amp; Space Collection</p>
+     <p data-template-id="footer-note" class="canva-text" style="color: rgb(107, 102, 93); font-weight: 400; font-style: normal; font-size: 16px;">An editorial study in dressing and dwelling.</p>
+    </div>
+   </footer>
+  </div>
+  <div id="detail-modal" class="modal-shell fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+   <div class="modal-panel relative grid max-h-[90%] w-full max-w-5xl overflow-auto bg-[#f4f0e8] shadow-2xl md:grid-cols-2"><button id="modal-close" data-template-id="modal-close" type="button" class="canva-button focus-ring absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full" aria-label="Close story" style="background: rgb(255, 255, 255); color: rgb(37, 37, 31);"> <i data-lucide="x" aria-hidden="true" class="h-5 w-5"></i> </button>
+    <div class="min-h-[300px] bg-stone-200 md:min-h-[560px]"><img id="modal-image" class="h-full w-full object-cover" alt="">
+    </div>
+    <div class="flex flex-col justify-center p-7 md:p-12">
+     <p id="modal-category" class="mb-4 inline-flex w-fit rounded-full bg-[#e45f43] px-3 py-1 text-sm font-semibold uppercase tracking-[0.16em] text-white"></p>
+     <h2 id="modal-title" class="display-font text-4xl leading-tight md:text-5xl"></h2>
+     <p id="modal-description" class="mt-5 text-lg leading-relaxed text-black/70"></p>
+     <div class="mt-8 h-px w-20 bg-black/40"></div>
+     <p data-template-id="modal-note" class="canva-text mt-6 leading-relaxed" style="color: rgb(101, 96, 86); font-weight: 400; font-style: italic; font-size: 16px; line-height: 1.55;">Styling note: choose one strong material or color, then let quieter elements support it.</p>
+    </div>
+   </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+
+      const exploreButton = document.getElementById("explore-button");
+      const collection = document.getElementById("collection");
+      const filters = [...document.querySelectorAll("[data-filter]")];
+      const cards = [...document.querySelectorAll(".editorial-card")];
+      const modal = document.getElementById("detail-modal");
+      const modalClose = document.getElementById("modal-close");
+      const modalImage = document.getElementById("modal-image");
+      const modalCategory = document.getElementById("modal-category");
+      const modalTitle = document.getElementById("modal-title");
+      const modalDescription = document.getElementById("modal-description");
+      let lastTrigger = null;
+
+      exploreButton.addEventListener("click", () => {
+        collection.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      function filterCards(category) {
+        cards.forEach((card, index) => {
+          const show = category === "all" || card.dataset.category === category;
+          card.classList.toggle("is-hidden", !show);
+          if (show) {
+            card.style.animation = "none";
+            card.offsetHeight;
+            card.style.animation = "";
+            card.style.animationDelay = `${index * 0.06}s`;
+          }
+        });
+      }
+
+      filters.forEach(button => {
+        button.addEventListener("click", () => {
+          filters.forEach(item => item.setAttribute("aria-selected", "false"));
+          button.setAttribute("aria-selected", "true");
+          filterCards(button.dataset.filter);
+        });
+      });
+
+      function openCard(card) {
+        const image = card.querySelector("img");
+        const category = card.querySelector('[data-template-id$="-category"]');
+        const title = card.querySelector("h3");
+        const description = card.querySelector('[data-template-id$="-description"]');
+
+        lastTrigger = card;
+        modalImage.src = image.currentSrc || image.src;
+        modalImage.alt = image.alt || "";
+        modalCategory.textContent = category.textContent;
+        modalTitle.textContent = title.textContent;
+        modalDescription.textContent = description.textContent;
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+        requestAnimationFrame(() => modal.classList.add("is-open"));
+        modalClose.focus();
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        document.body.style.overflow = "";
+        window.setTimeout(() => {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+          modalImage.removeAttribute("src");
+          if (lastTrigger) lastTrigger.focus();
+        }, 280);
+      }
+
+      cards.forEach(card => {
+        card.addEventListener("click", () => openCard(card));
+        card.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openCard(card);
+          }
+        });
+
+        const action = card.querySelector("button");
+        action.addEventListener("click", event => {
+          event.stopPropagation();
+          openCard(card);
+        });
+      });
+
+      modalClose.addEventListener("click", closeModal);
+      modal.addEventListener("click", event => {
+        if (event.target === modal) closeModal();
+      });
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+      });
+    });
+  </script>
+ 
+</body></html>
